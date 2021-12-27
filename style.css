@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1em;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+}
+
+main {
+    width: inherit;
+    height: calc(100% - 2vh);
+    /* substracted 2vh for the attribution*/
+    display: flex;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    background: url(./images/pattern-background-desktop.svg) 50% 0% repeat-x;
+}
+
+p {
+    cursor: default;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 30px 30px 25px 25px;
+    height: 650px;
+    width: 450px;
+    display: flex;
+    flex-flow: column;
+}
+
+.illustration {
+    margin: 0;
+}
+
+.illustration img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.summary {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.title h1 {
+    font-weight: 900;
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+    text-size-adjust: auto;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(231, 10%, 64%);
+}
+
+.pricing {
+    background-color: #f8f9fe;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#pricing p {
+    margin: 0;
+    padding: 3px;
+}
+
+#pricing {
+    margin-left: 10px;
+}
+
+#music-icon {
+    height: 50px;
+    margin-left: 15px;
+}
+
+#ap {
+    font-weight: 900;
+}
+
+#price {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+#change {
+    margin-left: 35%;
+    position: relative;
+}
+
+#change p {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    transition: opacity 150ms ease-out;
+}
+
+#change p:hover,
+#change p:focus {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 150ms ease-out;
+}
+
+#procede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0px 10px 15px #d7d0ff;
+    transition: opacity 150ms ease-out;
+}
+
+#procede:hover,
+#procede:focus {
+    opacity: 0.7;
+    transition: opacity 150ms ease-out;
+    cursor: pointer;
+}
+
+#cancel p {
+    font-weight: 700;
+  padding-top: 5px;
+    color: hsl(224, 23%, 55%);
+    transition: color 250ms ease-out;
+}
+
+#cancel p:hover,
+#cancel p:focus {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+    transition: color 250ms ease-out;
+}
+
+.attribution {
+    font-size: 1.5vh;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:470px) {
+    main{
+        background: url(./images/pattern-background-mobile.svg) 50% 0 repeat-x;
+        font-size:0.9em;
+
+    }
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #change {
+        margin-left:80px;
+    }
+
+    .desc {
+        font-size: 17px;
+    }
+
+    .attribution {
+        font-size: 1vh;
+    }
+}
